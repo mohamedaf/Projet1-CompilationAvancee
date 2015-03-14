@@ -650,8 +650,6 @@ void init_runtime(){
 
   MLnil->content.MLlist = list;
 
-  fflush(stdout);
-
   MLfst->content.MLfun = fstprimitive;
   MLsnd->content.MLfun = sndprimitive;
   MLhd->content.MLfun = hdprimitive;
