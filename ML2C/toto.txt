@@ -1,0 +1,47 @@
+/*OK donc ce qu'il faut modifier maintenant:
+
+toutes les fois ou on a ftest.x il faut enlever ftest et garder que x
+*/
+
+  MLvalue null___1;
+  MLvalue g___8;
+  MLvalue h___12;
+  MLvalue q___17;
+  MLvalue v___25;
+  MLvalue w___27;
+  MLvalue map___37;
+  MLvalue iter___57;
+  MLvalue inter___71;
+  MLvalue mult___87;
+  MLvalue i___92;
+  MLvalue l___98;
+  MLvalue fd___106;
+  MLvalue ig___108;
+  MLvalue bi___114;
+  MLvalue ik___118;
+  MLvalue b___122;
+  MLvalue umap___126;
+  MLvalue value___146;
+
+void init() {
+  null___1= new_MLfun(1);
+  g___8= new_MLfun(1);
+  h___12= new_MLfun(2);
+  q___17= new_MLfun(1);
+  v___25= new_MLfun(1);
+  w___27= new_MLfun(2);
+  map___37= new_MLfun(2);
+  iter___57= new_MLfun(2);
+  inter___71= new_MLfun(2);
+  mult___87= new_MLfun(2);
+  umap___126= new_MLfun(2);
+}
+
+
+MLvalue new_MLfun_null___1(int n) {
+  MLvalue m = new_MLfun(n);
+  MLfun_null___1.f = m.content.MLfun;
+  MLfun_null___1.f.invoke = &(null___1_invoke);
+  MLfun_null___1.invoke_real = &(null___1_invoke_real);
+  return m;
+}
